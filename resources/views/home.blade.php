@@ -7,11 +7,9 @@
 
     <div class="card">
         @foreach($movies as $movie)
-            <h1>{{movie.title}}</h1>
-            <h2>{{movie.original_title}}</h2>
-            <h2>{{movie.nationality}}</h2>
-            <h2>{{movie.date}}</h2>
-            <h2>{{movie.vote}}</h2>
+            <h1>{{$movie['title']}}</h1>
+            <h2>{{$movie['original_title']}}</h2>
+            
         @endforeach
     </div>
 
